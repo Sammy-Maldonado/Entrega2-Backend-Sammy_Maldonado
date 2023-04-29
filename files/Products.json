@@ -98,38 +98,5 @@
 		"stock": 4,
 		"status": true,
 		"id": 10
-	},
-	{
-		"title": "Samasdasdadi",
-		"description": "mesa café claro",
-		"price": 56804,
-		"code": "2542",
-		"stock": 65,
-		"status": true,
-		"category": "pieza",
-		"thumbnails": [],
-		"id": 11
-	},
-	{
-		"title": "Samasdasdadi",
-		"description": "mesa café claro",
-		"price": 56804,
-		"code": "66",
-		"stock": 65,
-		"status": true,
-		"category": "pieza",
-		"thumbnails": [],
-		"id": 12
-	},
-	{
-		"title": "Samasdasdadi",
-		"description": "mesa café claro",
-		"price": 56804,
-		"code": "2226",
-		"stock": 65,
-		"status": true,
-		"category": "pieza",
-		"thumbnails": [],
-		"id": 13
 	}
 ]
