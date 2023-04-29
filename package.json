@@ -1,0 +1,17 @@
+{
+  "name": "preentrega2-bkend-sammy_maldonado",
+  "version": "1.0.0",
+  "description": "",
+  "main": "main.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "",
+  "license": "ISC",
+  "type": "module",
+  "dependencies": {
+    "express": "^4.18.2",
+    "express-handlebars": "^7.0.7",
+    "socket.io": "^4.6.1"
+  }
+}
