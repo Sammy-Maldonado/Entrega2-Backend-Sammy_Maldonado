@@ -8,6 +8,10 @@
 			{
 				"name": "pescado",
 				"price": 900
+			},
+			{
+				"product": 10,
+				"quantity": 1
 			}
 		],
 		"id": 1

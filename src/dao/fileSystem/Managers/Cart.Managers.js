@@ -93,7 +93,7 @@ class CartManager {
     //Buscando el carrito con el ID proporcionado
     const cart = carts.find(c => c.id === cartId);
     if (!cart) {
-      throw new Error('Carrito no encontrado. Por favor, ingrese una ID válida.');
+      throw new Error('Carrito no encontrado. Por favor, ingrese una Id válida.');
     }
     // Validando si el ID del producto es mayor que 0
     if (productId <= 0) {
