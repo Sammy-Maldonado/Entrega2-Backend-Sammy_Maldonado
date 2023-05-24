@@ -12,12 +12,12 @@ const cartsServices = new CartsManager();
 
 /* MongoDb */
 router.get('/', async (req, res) => {
-  const products = await productsServices.getProducts();
+  const products = await productsServices.getProducts().lean();
   res.render('products', {products});
 });
 
 router.get('/carts', async (req, res) => {
-  const carts = await cartsServices.getCarts();
+  const carts = await cartsServices.getCarts().lean();
   res.render('carts', {carts});
   });
 

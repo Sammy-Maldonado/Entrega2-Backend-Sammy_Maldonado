@@ -2,7 +2,7 @@ import cartsModel from "../models/carts.js"
 
 export default class CartsManager {
   getCarts = (params) => {
-    return cartsModel.find(params).lean();
+    return cartsModel.find(params);
   };
 
   getCartById = (cartId) => {
