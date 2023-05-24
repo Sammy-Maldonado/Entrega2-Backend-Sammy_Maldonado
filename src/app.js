@@ -66,11 +66,11 @@ const context = async () => {
   {
     "products": [
       {
-      "name": "Sammy samuel",
+      "name": "Carrito de prueba con products",
       "price": 5000
   },
       {
-        "name": "simon perrito",
+        "name": "prueba carrito con products",
         "price": 8000
       }
     ]
@@ -79,17 +79,17 @@ const context = async () => {
   await cartsModel.create(cart); */
 
   /* Agregando el producto al carrito */
-  /* const cartId = "646e29ca61b5cb4bbc7e5601";
-    const productId = "646d1d474f820ecb1e5fdf79";
+  /* const cartId = "646e7fea1aeae45188d03716";
+    const productId = "646e7fb35ea8fab1846342fc";
     
     await cartsModel.updateOne(
       { _id: cartId },
-      { $push: { products: { product: new mongoose.Types.ObjectId(productId) } } }); */
-
+      { $push: { products: { product: new mongoose.Types.ObjectId(productId) } } }
+      ); */
 
   //El pructo "product" queda agregado a los "products" de mi carrito, pero se agrega solo con su "Id". Es necesario poblarlo con sus propiedades para que se vean sus prespectivos "title", "description", "price", etc, dentro de él.
-  const cart = await cartsModel.find();
-  console.log(JSON.stringify(cart,null,'\t'));
+  /* const cart = await cartsModel.find();
+  console.log(JSON.stringify(cart,null,'\t')); */
 
 };
 
