@@ -62,25 +62,17 @@ const context = async () => {
   await productsModel.create(product); */
 
   /* Creando un carrito */
-  /* const cart = 
+  /* const cart =
   {
-    "products": [
-      {
-      "name": "Carrito de prueba con products",
-      "price": 5000
-  },
-      {
-        "name": "prueba carrito con products",
-        "price": 8000
-      }
-    ]
+    "name": "Carrito de prueba con products",
+    "price": 5000
   }
-  
+
   await cartsModel.create(cart); */
 
   /* Agregando el producto al carrito */
-  /* const cartId = "646e7fea1aeae45188d03716";
-    const productId = "646e7fb35ea8fab1846342fc";
+  /* const cartId = "646e86b6e5bb25fd3065f7c5";
+    const productId = "646a825abd9bf198a28d3494";
     
     await cartsModel.updateOne(
       { _id: cartId },
@@ -88,8 +80,8 @@ const context = async () => {
       ); */
 
   //El pructo "product" queda agregado a los "products" de mi carrito, pero se agrega solo con su "Id". Es necesario poblarlo con sus propiedades para que se vean sus prespectivos "title", "description", "price", etc, dentro de él.
-  /* const cart = await cartsModel.find();
-  console.log(JSON.stringify(cart,null,'\t')); */
+  const cart = await cartsModel.find();
+  console.log(JSON.stringify(cart,null,'\t'));
 
 };
 

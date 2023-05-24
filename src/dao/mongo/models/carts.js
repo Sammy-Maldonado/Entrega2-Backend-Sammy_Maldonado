@@ -4,7 +4,6 @@ const cartsCollection = "carts";
 
 /* Schema Mongo Avanzado 1*/
 const cartProductSchema = new mongoose.Schema({
-  products: [{
     name: String,
     price: Number,
     product: String,
@@ -20,7 +19,6 @@ const cartProductSchema = new mongoose.Schema({
       ],
       default: []
     }
-  }]
 }, { timestamps: { createdAt: 'created_at', updatedAt: 'updated_at' } });
 
 cartProductSchema.pre('find', function () {
