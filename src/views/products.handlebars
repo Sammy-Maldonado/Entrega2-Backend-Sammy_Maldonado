@@ -1,16 +1,22 @@
-<div>
-  <h1> Productos Registrados </h1>
-  {{#each products}}
-  <div>
-    <p>{{this.title}}</p>
-    <p>{{this.description}}</p>
-    <p>{{this.price}}</p>
-    <p>{{this.code}}</p>
-    <p>{{this.stock}}</p>
-    <p>{{this.category}}</p>
-    <p>{{this.thumbnails}}</p>
-    <p>{{this.status}}</p>
-  </div>
-  {{/each}}
+<h1>Productos</h1>
 
-</div>
+{{#each products}}
+<h2>{{this.title}}</h2>
+<p>Descripción: {{this.description}}</p>
+<p>Precio: ${{this.price}}</p>
+<p>Stock: {{this.stock}}</p>
+<p>Categoría: {{this.category}}</p>
+<p>Código: {{this.code}}</p>
+<a href="{{req.baseUrl}}/products/{{this._id}}"><button>Ver Detalles</button></a>
+<br>
+<br>
+{{/each}}
+{{#if hasPrevPage}}
+<a href="{{req.baseUrl}}/products/?page={{prevPage}}"><button>Anterior</button></a>
+{{/if}}
+
+{{page}}
+
+{{#if hasNextPage}}
+<a href="{{req.baseUrl}}/products/?page={{nextPage}}"><button>Siguiente</button></a>
+{{/if}}

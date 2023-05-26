@@ -47,16 +47,16 @@ io.on('connection', socket => {
 });
 
 
-
+/* Sintaxis Mongo Avanzado */
 const context = async () => {
   /* Creando un producto */
   /* const product = {
-    title: "Producto de prueba para carrito",
-    description: "este es un producto agregado desde app.js",
-    price: 6000,
-    code: "60",
+    title: "productito",
+    description: "dulce",
+    price: 600,
+    code: "21",
     stock: 10,
-    category: "testProduct",
+    category: "frutas",
     thumbnails: []
   }
   await productsModel.create(product); */
@@ -71,7 +71,7 @@ const context = async () => {
   await cartsModel.create(cart); */
 
   /* Agregando el producto al carrito */
-  /* const cartId = "646e86b6e5bb25fd3065f7c5";
+  /* const cartId = "646ebbefe90f24c0096376c8";
     const productId = "646a825abd9bf198a28d3494";
     
     await cartsModel.updateOne(
@@ -80,8 +80,8 @@ const context = async () => {
       ); */
 
   //El pructo "product" queda agregado a los "products" de mi carrito, pero se agrega solo con su "Id". Es necesario poblarlo con sus propiedades para que se vean sus prespectivos "title", "description", "price", etc, dentro de él.
-  const cart = await cartsModel.find();
-  console.log(JSON.stringify(cart,null,'\t'));
+  /* const cart = await cartsModel.find();
+  console.log(JSON.stringify(cart,null,'\t')); */
 
 };
 
